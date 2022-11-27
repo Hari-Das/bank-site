@@ -42,8 +42,6 @@ p {
   margin-top: 0;
 }
 
-
-/*Screen Size*/
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -58,5 +56,43 @@ p {
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--color-accent);
+  transition: margin .2s;
+}
+
+.link-arrow:hover {
+  text-decoration-line: underline;
+  margin-left: 5px;
+}
+
+.link-arrow::after {
+  content: "->";
+  margin-left: 5px;
+  transition: margin .2s;
+}
+
+.link-arrow:hover::after {
+  display: inline-block;
+  text-decoration-line: none;
+  content: "-->";
+  margin-left: 10px;
+}
+
+@media screen and (min-width:1024px) {
+  .link-arrow{
+    font-size: 1.5rem;
   }
 }
