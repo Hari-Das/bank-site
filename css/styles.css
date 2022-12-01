@@ -388,7 +388,6 @@ a {
   }
 }
 
-
 /* Media Objects */
 .media {
   display: flex;
@@ -422,11 +421,10 @@ a {
 }
 
 .media__description {
- font-size: 2rem;
- color: #7b858b;
- margin-top: 1.5rem;
+  font-size: 2rem;
+  color: #7b858b;
+  margin-top: 1.5rem;
 }
-
 
 /* Quotes */
 .quote {
@@ -441,7 +439,7 @@ a {
   content: open-quote;
 }
 
-.quote__text::after{
+.quote__text::after {
   content: close-quote;
 }
 
@@ -459,20 +457,20 @@ a {
   font-size: 2rem;
   font-style: normal;
   color: var(--color-heading);
-  opacity: .6;
+  opacity: 0.6;
   margin: 0;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .quote {
     font-size: 2rem;
   }
 
-  .quote__author{
+  .quote__author {
     font-size: 2.4rem;
   }
-  
-  .quote__organization{
+
+  .quote__organization {
     font-size: 1.6rem;
   }
 
@@ -481,5 +479,19 @@ a {
   }
 }
 
-
 /* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-2 {
+    grid-template: 1fr / repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--cols-3 {
+    grid-template: auto/ repeat(3,1fr);
+  }
+}
