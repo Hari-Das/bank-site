@@ -500,10 +500,9 @@ a {
 
 @media screen and (min-width: 1024px) {
   .grid--cols-3 {
-    grid-template: auto/ repeat(3,1fr);
+    grid-template: auto/ repeat(3, 1fr);
   }
 }
-
 
 /* testimonials */
 .testimonial {
@@ -514,17 +513,17 @@ a {
   position: relative;
 }
 
-.testimonial__image > img{
+.testimonial__image > img {
   width: 100%;
 }
 
 .testimonial__image > .icon-container {
-    position: absolute;
-    right: -32px;
-    top: 2rem;
+  position: absolute;
+  right: -32px;
+  top: 2rem;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
@@ -532,5 +531,48 @@ a {
 
   .testimonial .quote {
     margin-left: 6rem;
+  }
+}
+
+/* Callouts */
+.callout {
+  padding: 5rem 3rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout__heading {
+  color: white;
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-top: 0;
+}
+
+.callout__description {
+  color: white;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--cols-2 {
+      grid-template: 1fr /1fr auto;
+  }
+
+  .callout__content {
+    text-align: left;
+  }
+  .callout .btn {
+    margin-left: 2rem;
   }
 }
