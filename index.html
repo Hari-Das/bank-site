@@ -14,19 +14,31 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body style="padding: 2rem">
-    <div class="callout callout--primary">
-      <div class="grid grid--cols-2">
-        <div class="callout__content">
-          <h2 class="callout__heading">Ready to get started?</h2>
-          <p class="callout__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, optio
-            rem beatae corrupti aliquam sit vitae quidem natus, mollitia nisi sint
-            quo. Accusamus, praesentium veritatis!
-          </p>
-        </div>
-        <a href="#" class="btn btn--secondary">get started</a>
+  <body>
+    <div class="collapsible collapsible--dark collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Products</h2>
+        <svg class="icon icon--white collapsible__icon">
+          <use xlink:href="images/sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas repellat
+        nobis itaque, iste magni ipsam pariatur accusamus fugit labore earum.
       </div>
     </div>
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Products</h2>
+        <svg class="icon icon--white collapsible__icon">
+          <use xlink:href="images/sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas repellat
+        nobis itaque, iste magni ipsam pariatur accusamus fugit labore earum.
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
