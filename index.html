@@ -15,19 +15,51 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    
-    <div class="collapsible collapsible--expanded">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading">Products</h2>
-        <svg class="icon icon--white collapsible__icon">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible__content">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas repellat
-        nobis itaque, iste magni ipsam pariatur accusamus fugit labore earum.
+    <section class="block">
+      <div class="container">
+        <header class="block__header">
+          <h2 class="block__heading">Heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            omnis aut vel nam, sed ducimus quae id tempora ipsam quam?
+          </p>
+        </header>
+        <div class="card">
+          <div class="testimonial grid grid--cols-2">
+            <div class="testimonial__image">
+              <img
+                src="images/testimonial.jpg"
+                alt="A happy smiling customer"
+              />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                sapiente dolor delectus adipisci voluptatem similique dignissimos
+                inventore odio quia voluptatum.
+              </p>
+              <div class="media">
+                <div class="media__image quote__line">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Author name</h3>
+                  <p class="media__description quote__organization">
+                    Company title
+                  </p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
       </div>
-    </div>
-    <script src="js/main.js"></script>
+    </section>
   </body>
 </html>
