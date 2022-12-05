@@ -15,24 +15,29 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav class="nav nav--dark collapsible">
-      <a href="/"><img class="nav__icon" src="images/logo.png" alt="logo"></a>
-      <svg class="icon nav__toogler">
-        <use xlink:href="images/sprite.svg#menu"></use>
-      </svg>
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">Item 1</a></li>
-        <li class="nav__item"><a href="#">Item 2</a></li>
-        <li class="nav__item"><a href="#">Item 3</a></li>
-        <li class="nav__item"><a href="#">Item 4</a></li>
-        <li class="nav__item"><a href="#">Item 4</a></li>
-        <li class="nav__item"><a href="#">Item 4</a></li>
-        <li class="nav__item"><a href="#">Item 4</a></li>
-        <li class="nav__item"><a href="#">Item 4</a></li>
-        <li class="nav__item"><a href="#">Item 4</a></li>
-        <li class="nav__item"><a href="#">Item 4</a></li>
-      </ul>
-    </nav>
+    <section class="hero block block--dark block--skewed-left">
+      <div class="grid grid--cols-2 container">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Cloud Hosting For Pros</h1>
+          <p class="hero__tagline">Deploy your website within seconds</p>
+          <a href="#" class="btn btn--accent">Get started</a>
+        </header>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              images/banner/banner.webp    1x,
+              images/banner/banner@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            srcset="images/banner/banner.pnd 1x, images/banner/banner@2x.png 2x"
+          />
+          <img class="hero__image" src="images/banner/banner.png" alt="" />
+        </picture>
+      </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
