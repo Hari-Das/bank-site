@@ -15,76 +15,44 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block-showcase block block--dark block--skewed-right">
-      <div class="container">
-        <div class="block__header">
-          <h2 class="block__heading">User-Friendly Control Panel</h2>
-        </div>
-        <div class="grid grid--cols-2">
-          <picture class="block-showcase__image">
-            <source
-              srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
-              type="image/webp"
-            />
-            <source
-              srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
-              type="image/png"
-            />
-            <img src="images/ipad@2x.png" alt="" />
-          </picture>
-          <ul class="list">
-            <li>
-              <div class="media media--dark">
-                <div class="media__image">
-                  <svg class="icon icon--primary">
-                    <use xlink:href="images/sprite.svg#snap"></use>
-                  </svg>
-                </div>
-                <div class="media__body">
-                  <h3 class="media__title">Easy Start & managed updates</h3>
-                  <p class="media__description">
-                    Our cloud plans include easy onboarding for new and existing
-                    sites and managed WordPress and WooCommerce auto-updates.
-                  </p>
-                </div>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="block__heading">What our Customers are saying</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque error
+          iste sit velit quod sint?
+        </p>
+      </header>
+      <div class="card">
+        <div class="testimonial grid grid--cols-2">
+          <div class="testimonial__image">
+            <img src="images/testimonial.jpg" alt="A happy smiling customer" />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              sapiente dolor delectus adipisci voluptatem similique dignissimos
+              inventore odio quia voluptatum.
+            </p>
+            <div class="media">
+              <div class="media__image quote__line">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
               </div>
-            </li>
-
-            <li>
-              <div class="media media--dark">
-                <div class="media__image">
-                  <svg class="icon icon--primary">
-                    <use xlink:href="images/sprite.svg#snap"></use>
-                  </svg>
-                </div>
-                <div class="media__body">
-                  <h3 class="media__title">Staging, Git & WP-CLI</h3>
-                  <p class="media__description">
-                    We make your WordPress and WooCommerce development flow easier
-                    with a convenient staging tool and Git and WP-CLI integration.
-                  </p>
-                </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">Author name</h3>
+                <p class="media__description quote__organization">
+                  Company title
+                </p>
               </div>
-            </li>
-
-            <li>
-              <div class="media media--dark">
-                <div class="media__image">
-                  <svg class="icon icon--primary">
-                    <use xlink:href="images/sprite.svg#snap"></use>
-                  </svg>
-                </div>
-                <div class="media__body">
-                  <h3 class="media__title">Dynamic Caching & More</h3>
-                  <p class="media__description">
-                    Speed up your WordPress and Woo sites with our SG Optimizer
-                    plugin through smart dynamic caching and multiple other
-                    performance optimizations.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </blockquote>
         </div>
       </div>
     </section>
