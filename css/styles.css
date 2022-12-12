@@ -18,6 +18,11 @@
 }
 
 /* Typography */
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -47,6 +52,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 p {
@@ -144,7 +150,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-heading);
 }
 
 .list--inline .list__item {
@@ -155,6 +160,7 @@ a {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   margin-left: 3rem;
+  color: var(--color-heading);
 }
 
 .list--tick .list__item {
@@ -868,5 +874,42 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__image {
     order: -1;
+  }
+}
+
+/* Showcase */
+.block-showcase.block--skewed-right {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+
+.block-showcase__image img{
+  width: 100%;
+}
+
+.block-showcase .media {
+  margin: 6rem 3rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  .block-showcase .grid--cols-2 {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image{
+    justify-self: end;
+  }
+
+  .block-showcase__image img{
+    width: 700px;
+  }
+
+  .block-showcase .media {
+    margin: 3rem 3rem;
+  }
+  
+  .block-showcase .media__title,
+  .block-showcase .media__description {
+    font-size: 1.8rem;
   }
 }
