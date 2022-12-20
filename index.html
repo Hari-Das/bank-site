@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Banking made simple! Simple, Fast, Secure online Banking Solution."
+    />
+    <meta property="og:title" content="My Bank" />
+    <meta
+      property="og:description"
+      content="Banking made simple! Simple, Fast, Secure online Banking Solution."
+    />
+    <meta property="og:type" content="website" />
     <title>Test Site</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,79 +25,426 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Nav Bar -->
+    <header>
+      <nav class="nav nav--dark collapsible">
+        <a href="/">
+          <img class="nav__icon" src="images/logo.png" alt="logo" />
+        </a>
+        <svg class="icon nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Option 1</a></li>
+          <li class="nav__item"><a href="#">Option 2</a></li>
+          <li class="nav__item"><a href="#">Option 3</a></li>
+          <li class="nav__item"><a href="#">Option 4</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero block -->
+      <section class="hero block block--dark block--skewed-left">
+        <div class="container grid grid--cols-2">
+          <header class="block__header hero__content">
+            <h1 class="block__heading">Banking Made Simple</h1>
+            <p class="hero__tagline">
+              Simple, Fast, Secure online Banking Solution
+            </p>
+            <a href="#" class="btn btn--accent">Get started</a>
+          </header>
+          <picture>
+            <img class="hero__image" src="images/banner.png" alt="" />
+          </picture>
+        </div>
+      </section>
+
+      <!-- Feature search block -->
+      <section class="container block block-domain">
+        <header class="block__header">
+          <h2 class="block__heading">
+            The best banking services starting at per month.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+            aliquam aliquid maiores animi quas ipsum eius laudantium recusandae
+            repellat quasi?
+          </p>
+        </header>
+        <div class="input-group">
+          <input type="text" class="input" placeholder="Search services" />
+          <button class="btn btn--accent">
+            <svg class="icon icon--white">
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+            <span class="btn__text">Search</span>
+          </button>
+        </div>
+        <ul class="list block-domain__prices">
+          <li>
+            <span class="badge badge--primary">Integration</span>
+          </li>
+          <li><span class="badge">Security</span></li>
+          <li><span class="badge">Invest</span></li>
+          <li><span class="badge">Loan</span></li>
+          <li><span class="badge">Cards</span></li>
+          <li><span class="badge">UI</span></li>
+        </ul>
+      </section>
+
+      <!-- Plan block -->
+      <section class="container block block-plan">
+        <div class="grid grid--cols-3">
+          <div class="plan">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Entry</h3>
+                <span class="plan__price">Free</span>
+                <span class="plan__description">Experience the best</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">10 transactions</li>
+                  <li class="list__item">UPI / NEFT / IMPS / Cards</li>
+                  <li class="list__item">
+                    Premium User Friendly Dashboard<br /><br />
+                  </li>
+                </ul>
+                <a href="#" class="btn btn--outline btn--block">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="plan plan--popular">
+            <div class="card card--primary">
+              <header class="card__header">
+                <h3 class="plan__name">StartUp</h3>
+                <span class="plan__price">$20</span>
+                <span class="plan__billing-cycle">/month</span>
+                <span class="badge badge--primary badge--small">10% Off</span>
+                <span class="plan__description"
+                  >Suitable for small businesses and start-ups</span
+                >
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">1000 transactions</li>
+                  <li class="list__item">UPI / NEFT / IMPS</li>
+                  <li class="list__item">Premium Dashboard</li>
+                  <li class="list__item">Corporate Card</li>
+                  <li class="list__item">Undo wrong payments with 5 sec</li>
+                </ul>
+                <a href="#" class="btn btn--outline btn--block">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Business Plus</h3>
+                <span class="plan__price">$50</span>
+                <span class="plan__billing-cycle">/month</span>
+                <span class="badge badge--secondary badge--small">20% Off</span>
+                <span class="plan__description">Suitable for businesses</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">All benefits of StartUp plan</li>
+                  <li class="list__item">Low International fee transactions</li>
+                  <li class="list__item">Bulk/Schedule transactions</li>
+                </ul>
+                <a href="#" class="btn btn--outline btn--block">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Block -->
+      <section class="container block">
+        <header class="block__header">
+          <h2 class="block__heading">
+            Power your Finance with us and keep growing
+          </h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+            sint.
+          </p>
+        </header>
+
+        <article class="feature grid grid--cols-2">
+          <div>
+            <span class="icon-container">
+              <svg class="icon icon--secondary">
+                <use xlink:href="images/sprite.svg#computer"></use>
+              </svg>
+            </span>
+            <h3 class="feature__heading">Security</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              quis eos placeat non tenetur, veritatis ullam nam facilis
+              molestiae velit?
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
+          <div class="feature__image">
+            <picture>
+              <img src="images/security.png" alt="" />
+            </picture>
+          </div>
+        </article>
+
+        <article class="feature grid grid--cols-2">
+          <div>
+            <span class="icon-container">
+              <svg class="icon icon--secondary">
+                <use xlink:href="images/sprite.svg#line"></use>
+              </svg>
+            </span>
+            <h3>Integration</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              quis eos placeat non tenetur, veritatis ullam nam facilis
+              molestiae velit?
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
+          <div class="feature__image">
+            <picture>
+              <img src="images/integration.png" alt="" />
+            </picture>
+          </div>
+        </article>
+
+        <article class="feature grid grid--cols-2">
+          <div>
+            <span class="icon-container">
+              <svg class="icon icon--secondary">
+                <use xlink:href="images/sprite.svg#growth"></use>
+              </svg>
+            </span>
+            <h3>Corporate Card</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              quis eos placeat non tenetur, veritatis ullam nam facilis
+              molestiae velit?
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
+          <div class="feature__image">
+            <picture>
+              <img src="images/credit-card.png" alt="" />
+            </picture>
+          </div>
+        </article>
+
+        <article class="feature grid grid--cols-2">
+          <div>
+            <span class="icon-container">
+              <svg class="icon icon--secondary">
+                <use xlink:href="images/sprite.svg#clock"></use>
+              </svg>
+            </span>
+            <h3>24/7 Expert Support</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              quis eos placeat non tenetur, veritatis ullam nam facilis
+              molestiae velit?
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
+          <div class="feature__image">
+            <picture>
+              <img src="images/support.png" alt="" />
+            </picture>
+          </div>
+        </article>
+      </section>
+
+      <!-- Showcase block -->
+      <section class="block-showcase block block--dark block--skewed-right">
+        <div class="container">
+          <div class="block__header">
+            <h2 class="block__heading">Modern and User Friendly UI</h2>
+          </div>
+          <div class="grid grid--cols-2">
+            <picture class="block-showcase__image">
+              <img src="images/dashboard.png" alt="" />
+            </picture>
+            <ul class="list">
+              <li>
+                <div class="media media--dark">
+                  <div class="media__image">
+                    <svg class="icon icon--green">
+                      <use xlink:href="images/sprite.svg#tick"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title">
+                      Easy to use with a lot of features
+                    </h3>
+                    <p class="media__description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Atque nam similique doloremque molestias ducimus
+                      praesentium quibusdam mollitia corrupti omnis ipsum!
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="media media--dark">
+                  <div class="media__image">
+                    <svg class="icon icon--green">
+                      <use xlink:href="images/sprite.svg#clock"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title">
+                      Supports multiple logins with custom permissions.
+                    </h3>
+                    <p class="media__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quam commodi natus vero doloremque vitae eveniet quaerat
+                      qui quod!
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="media media--dark">
+                  <div class="media__image">
+                    <svg class="icon icon--green">
+                      <use xlink:href="images/sprite.svg#snap"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title">Custom Dashboard and Reports</h3>
+                    <p class="media__description">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      At cum ea quisquam dolores? Nesciunt beatae debitis quasi
+                      esse quibusdam officiis architecto praesentium iure
+                      laudantium consectetur.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial block -->
+      <section class="block container">
+        <header class="block__header">
+          <h2 class="block__heading">What our Customers are saying</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            error iste sit velit quod sint?
+          </p>
+        </header>
+        <div class="card">
+          <div class="testimonial grid grid--cols-2">
+            <div class="testimonial__image">
+              <img src="images/customer.png" alt="A happy customer" />
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequuntur consectetur ullam dolores odio minus corrupti
+                laborum iure necessitatibus fugit pariatur.
+              </p>
+              <div class="media">
+                <div class="media__image quote__line">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Customer name</h3>
+                  <p class="media__description quote__organization">
+                    Company title
+                  </p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="block block--dark footer footer--dark">
       <div class="grid container">
         <section
           class="collapsible collapsible--dark collapsible--expanded footer__section"
         >
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Products</h2>
-            <svg class="icon icon--white collapsible__icon">
-              <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
-          </header>
-          <ul class="list collapsible__content footer__list">
-            <li class="footer__list-item"><a href="#">Item 2</a></li>
-            <li class="footer__list-item"><a href="#">Item 3</a></li>
-            <li class="footer__list-item"><a href="#">Item 4</a></li>
-            <li class="footer__list-item"><a href="#">Item 1</a></li>
-            <li class="footer__list-item"><a href="#">Item 5</a></li>
-          </ul>
-        </section>
-
-        <section class="collapsible collapsible--dark footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Company</h2>
             <svg class="icon icon--white collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <ul class="list collapsible__content footer__list">
+            <li class="footer__list-item"><a href="#">Item 1</a></li>
             <li class="footer__list-item"><a href="#">Item 2</a></li>
             <li class="footer__list-item"><a href="#">Item 3</a></li>
             <li class="footer__list-item"><a href="#">Item 4</a></li>
+          </ul>
+        </section>
+
+        <section class="collapsible collapsible--dark footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Banking</h2>
+            <svg class="icon icon--white collapsible__icon">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <ul class="list collapsible__content footer__list">
             <li class="footer__list-item"><a href="#">Item 1</a></li>
+            <li class="footer__list-item"><a href="#">Item 2</a></li>
+            <li class="footer__list-item"><a href="#">Item 3</a></li>
+            <li class="footer__list-item"><a href="#">Item 4</a></li>
             <li class="footer__list-item"><a href="#">Item 5</a></li>
           </ul>
         </section>
 
         <section class="collapsible collapsible--dark footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">More</h2>
+            <svg class="icon icon--white collapsible__icon">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <ul class="list collapsible__content footer__list">
+            <li class="footer__list-item"><a href="#">Item 1</a></li>
+            <li class="footer__list-item"><a href="#">Item 2</a></li>
+            <li class="footer__list-item"><a href="#">Item 3</a></li>
+          </ul>
+        </section>
+
+        <section class="collapsible collapsible--dark footer__section">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Support</h2>
             <svg class="icon icon--white collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <ul class="list collapsible__content footer__list">
+            <li class="footer__list-item"><a href="#">Item 1</a></li>
             <li class="footer__list-item"><a href="#">Item 2</a></li>
             <li class="footer__list-item"><a href="#">Item 3</a></li>
             <li class="footer__list-item"><a href="#">Item 4</a></li>
-            <li class="footer__list-item"><a href="#">Item 1</a></li>
-            <li class="footer__list-item"><a href="#">Item 5</a></li>
-          </ul>
-        </section>
-
-        <section class="collapsible collapsible--dark footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Domain</h2>
-            <svg class="icon icon--white collapsible__icon">
-              <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
-          </header>
-          <ul class="list collapsible__content footer__list">
-            <li class="footer__list-item"><a href="#">Item 2</a></li>
-            <li class="footer__list-item"><a href="#">Item 3</a></li>
-            <li class="footer__list-item"><a href="#">Item 4</a></li>
-            <li class="footer__list-item"><a href="#">Item 1</a></li>
-            <li class="footer__list-item"><a href="#">Item 5</a></li>
           </ul>
         </section>
         <div class="footer__copyright">
-          <img src="images/logo.svg" alt="" />
-          <p>Copyright &copy; 2022 Hari</p>
+          <img src="images/logo.png" alt="" />
+          <p>&copy; 2022 Hari</p>
         </div>
       </div>
     </footer>
+
     <script src="js/main.js"></script>
   </body>
 </html>
